@@ -14,6 +14,8 @@
 		76B2C6762CCC3E5F00736DB7 /* Swapi_CookUnityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6752CCC3E5F00736DB7 /* Swapi_CookUnityTests.swift */; };
 		76B2C6802CCC3E5F00736DB7 /* Swapi_CookUnityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C67F2CCC3E5F00736DB7 /* Swapi_CookUnityUITests.swift */; };
 		76B2C6822CCC3E5F00736DB7 /* Swapi_CookUnityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6812CCC3E5F00736DB7 /* Swapi_CookUnityUITestsLaunchTests.swift */; };
+		76B2C6902CCC464200736DB7 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C68F2CCC464200736DB7 /* Api.swift */; };
+		76B2C6932CCC467100736DB7 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6922CCC467100736DB7 /* People.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		76B2C67B2CCC3E5F00736DB7 /* Swapi-CookUnityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swapi-CookUnityUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B2C67F2CCC3E5F00736DB7 /* Swapi_CookUnityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swapi_CookUnityUITests.swift; sourceTree = "<group>"; };
 		76B2C6812CCC3E5F00736DB7 /* Swapi_CookUnityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swapi_CookUnityUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		76B2C68F2CCC464200736DB7 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		76B2C6922CCC467100736DB7 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 		76B2C6632CCC3E5E00736DB7 /* Swapi-CookUnity */ = {
 			isa = PBXGroup;
 			children = (
+				76B2C6912CCC466000736DB7 /* Models */,
+				76B2C68E2CCC462D00736DB7 /* Services */,
 				76B2C6642CCC3E5E00736DB7 /* Swapi_CookUnityApp.swift */,
 				76B2C6662CCC3E5E00736DB7 /* ContentView.swift */,
 				76B2C6682CCC3E5F00736DB7 /* Assets.xcassets */,
@@ -125,6 +131,22 @@
 				76B2C6812CCC3E5F00736DB7 /* Swapi_CookUnityUITestsLaunchTests.swift */,
 			);
 			path = "Swapi-CookUnityUITests";
+			sourceTree = "<group>";
+		};
+		76B2C68E2CCC462D00736DB7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				76B2C68F2CCC464200736DB7 /* Api.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		76B2C6912CCC466000736DB7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				76B2C6922CCC467100736DB7 /* People.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76B2C6932CCC467100736DB7 /* People.swift in Sources */,
+				76B2C6902CCC464200736DB7 /* Api.swift in Sources */,
 				76B2C6672CCC3E5E00736DB7 /* ContentView.swift in Sources */,
 				76B2C6652CCC3E5E00736DB7 /* Swapi_CookUnityApp.swift in Sources */,
 			);

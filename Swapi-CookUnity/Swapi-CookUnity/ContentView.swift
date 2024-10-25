@@ -8,17 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var people = [People]()
+    
+    let api: Api
+    
+    init(api: Api) {
+        self.api = api
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ScrollView {
+            LazyVStack {
+                ForEach(people) { character in
+                    Text("Name: \(character.name)")
+                }
+            }
         }
         .padding()
+        .task {
+            try? await getData()
+        }
+    }
+    
+    private func getData() async throws {
+        do {
+            self.people = try await api.fetchPeople()
+        } catch {
+            // handle error
+        }
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(api: Api())
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct Swapi_CookUnityApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(api: Api())
         }
     }
 }
