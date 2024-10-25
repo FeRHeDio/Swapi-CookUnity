@@ -1,2 +1,3 @@
 # Swapi-CookUnity
-CookUnity Code Challenge
+## CookUnity Code Challenge by Fernando Putallaz
+## ferhedio@gmail.com
