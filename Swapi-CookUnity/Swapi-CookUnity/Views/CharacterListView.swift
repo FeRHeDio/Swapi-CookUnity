@@ -26,9 +26,9 @@ struct CharacterListView: View {
                     }
                 }
             }
-            .task {
-                await getData()
-            }
+        }
+        .task {
+            await getData()
         }
     }
     
