@@ -25,14 +25,23 @@ struct CharacterListView: View {
                             .onTapGesture {
                                 selectedCharacter = character
                             }
+                        
+                        if character == charactersViewModel.people.last {
+                            HStack {
+                                ProgressView()
+                                    .progressViewStyle(.circular)
+                                    .onAppear {
+                                        Task {
+                                            await charactersViewModel.loadMoreCharacters()
+                                        }
+                                    }
+                            }
+                        }
                     }
                 }
             }
         }
         .refreshable {
-            await getData()
-        }
-        .task {
             await getData()
         }
         .sheet(item: $selectedCharacter) { character in

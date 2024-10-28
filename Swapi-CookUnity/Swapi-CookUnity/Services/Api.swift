@@ -8,11 +8,13 @@
 import Foundation
 
 class Api {
-    let basePeopleURL = "https://swapi.dev/api/people"
+    var url = "https://swapi.dev/api/people"
+    var hasMorePages = true
     
     func fetchPeople() async throws -> [People] {
         do {
-            guard let url = URL(string: basePeopleURL) else {
+            
+            guard let url = URL(string: url) else {
                 throw URLError(.badURL)
             }
             
@@ -28,6 +30,13 @@ class Api {
             
             let peopleResponse = try JSONDecoder().decode(PeopleResponse.self, from: data)
             
+            if let nextPage = peopleResponse.next {
+                self.url = nextPage
+                print(nextPage)
+            } else {
+                hasMorePages = false
+            }
+                
             return peopleResponse.results
             
         } catch {

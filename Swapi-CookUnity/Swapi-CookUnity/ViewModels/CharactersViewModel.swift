@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+@MainActor
 @Observable
 class CharactersViewModel {
     var people = [People]()
@@ -15,13 +17,29 @@ class CharactersViewModel {
     
     init(api: Api) {
         self.api = api
+        
+        Task {
+            await loadFirstCharacters()
+        }
     }
     
-    func loadCharacters() async {
+    func loadFirstCharacters() async {
         do {
+            self.people.removeAll()
             self.people = try await api.fetchPeople()
         } catch {
             // handle error
+        }
+    }
+    
+    func loadMoreCharacters() async {
+        if api.hasMorePages {
+            do {
+                let morePeople = try await api.fetchPeople()
+                self.people.append(contentsOf: morePeople)
+            } catch {
+                // handle error
+            }
         }
     }
 }

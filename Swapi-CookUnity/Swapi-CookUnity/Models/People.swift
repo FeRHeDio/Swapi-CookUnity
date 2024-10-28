@@ -14,7 +14,7 @@ struct PeopleResponse: Codable {
     let results: [People]
 }
 
-struct People: Codable, Identifiable {
+struct People: Codable, Identifiable, Equatable {
     var id = UUID().uuidString
     let name: String
     let height: String
