@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		76B2C6652CCC3E5E00736DB7 /* Swapi_CookUnityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6642CCC3E5E00736DB7 /* Swapi_CookUnityApp.swift */; };
-		76B2C6672CCC3E5E00736DB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6662CCC3E5E00736DB7 /* ContentView.swift */; };
 		76B2C6692CCC3E5F00736DB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76B2C6682CCC3E5F00736DB7 /* Assets.xcassets */; };
 		76B2C66C2CCC3E5F00736DB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76B2C66B2CCC3E5F00736DB7 /* Preview Assets.xcassets */; };
 		76B2C6762CCC3E5F00736DB7 /* Swapi_CookUnityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6752CCC3E5F00736DB7 /* Swapi_CookUnityTests.swift */; };
@@ -42,7 +41,6 @@
 /* Begin PBXFileReference section */
 		76B2C6612CCC3E5E00736DB7 /* Swapi-CookUnity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swapi-CookUnity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B2C6642CCC3E5E00736DB7 /* Swapi_CookUnityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swapi_CookUnityApp.swift; sourceTree = "<group>"; };
-		76B2C6662CCC3E5E00736DB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		76B2C6682CCC3E5F00736DB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76B2C66B2CCC3E5F00736DB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76B2C6712CCC3E5F00736DB7 /* Swapi-CookUnityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swapi-CookUnityTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +109,6 @@
 				76B2C6912CCC466000736DB7 /* Models */,
 				76B2C68E2CCC462D00736DB7 /* Services */,
 				76B2C6642CCC3E5E00736DB7 /* Swapi_CookUnityApp.swift */,
-				76B2C6662CCC3E5E00736DB7 /* ContentView.swift */,
 				76B2C6682CCC3E5F00736DB7 /* Assets.xcassets */,
 				76B2C66A2CCC3E5F00736DB7 /* Preview Content */,
 			);
@@ -312,7 +309,6 @@
 				76B2C6902CCC464200736DB7 /* Api.swift in Sources */,
 				76B2C6962CCD0D9600736DB7 /* CharacterListView.swift in Sources */,
 				76B2C6982CCFA90400736DB7 /* CharacterDetailView.swift in Sources */,
-				76B2C6672CCC3E5E00736DB7 /* ContentView.swift in Sources */,
 				76B2C69A2CCFAC9100736DB7 /* CharacterCardView.swift in Sources */,
 				76B2C6652CCC3E5E00736DB7 /* Swapi_CookUnityApp.swift in Sources */,
 			);
