@@ -20,9 +20,7 @@ struct CharacterListView: View {
         ScrollView {
             LazyVStack {
                 ForEach(people) { character in
-                    Text("Name: \(character.name)")
-                    Text("Name: \(character.birthYear)")
-                    Text("Name: \(character.eyeColor)")
+                    CharacterDetailView(character: character)
                 }
             }
         }
@@ -40,6 +38,7 @@ struct CharacterListView: View {
         }
     }
 }
+
 
 #Preview {
     CharacterListView(api: Api())

@@ -17,6 +17,7 @@
 		76B2C6902CCC464200736DB7 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C68F2CCC464200736DB7 /* Api.swift */; };
 		76B2C6932CCC467100736DB7 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6922CCC467100736DB7 /* People.swift */; };
 		76B2C6962CCD0D9600736DB7 /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6952CCD0D9600736DB7 /* CharacterListView.swift */; };
+		76B2C6982CCFA90400736DB7 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6972CCFA90400736DB7 /* CharacterDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		76B2C68F2CCC464200736DB7 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		76B2C6922CCC467100736DB7 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		76B2C6952CCD0D9600736DB7 /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
+		76B2C6972CCFA90400736DB7 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				76B2C6952CCD0D9600736DB7 /* CharacterListView.swift */,
+				76B2C6972CCFA90400736DB7 /* CharacterDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				76B2C6932CCC467100736DB7 /* People.swift in Sources */,
 				76B2C6902CCC464200736DB7 /* Api.swift in Sources */,
 				76B2C6962CCD0D9600736DB7 /* CharacterListView.swift in Sources */,
+				76B2C6982CCFA90400736DB7 /* CharacterDetailView.swift in Sources */,
 				76B2C6672CCC3E5E00736DB7 /* ContentView.swift in Sources */,
 				76B2C6652CCC3E5E00736DB7 /* Swapi_CookUnityApp.swift in Sources */,
 			);
