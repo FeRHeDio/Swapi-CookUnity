@@ -17,20 +17,22 @@ struct CharacterListView: View {
     }
     
     var body: some View {
-        ScrollView {
-            LazyVStack {
-                ForEach(people) { character in
-                    CharacterDetailView(character: character)
+        VStack {
+            ScrollView {
+                LazyVStack(spacing: 16) {
+                    ForEach(people) { character in
+                        CharacterCardView(character: character)
+                            .padding(.horizontal, 12)
+                    }
                 }
             }
-        }
-        .padding()
-        .task {
-            try? await getData()
+            .task {
+                await getData()
+            }
         }
     }
     
-    private func getData() async throws {
+    private func getData() async {
         do {
             self.people = try await api.fetchPeople()
         } catch {
