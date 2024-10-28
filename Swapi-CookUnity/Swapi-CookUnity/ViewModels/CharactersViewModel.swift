@@ -26,6 +26,7 @@ class CharactersViewModel {
     func loadFirstCharacters() async {
         do {
             self.people.removeAll()
+            api.resetURL()
             self.people = try await api.fetchPeople()
         } catch {
             // handle error

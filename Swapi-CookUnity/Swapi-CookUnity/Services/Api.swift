@@ -8,7 +8,7 @@
 import Foundation
 
 class Api {
-    var url = "https://swapi.dev/api/people"
+    var url = "https://swapi.dev/api/people/?page=1"
     var hasMorePages = true
     
     func fetchPeople() async throws -> [People] {
@@ -42,5 +42,9 @@ class Api {
         } catch {
             throw URLError(.unknown)
         }
+    }
+    
+    func resetURL() {
+        self.url = "https://swapi.dev/api/people/?page=1"
     }
 }

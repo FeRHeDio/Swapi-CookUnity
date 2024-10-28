@@ -50,7 +50,7 @@ struct CharacterListView: View {
     }
     
     private func getData() async {
-        await charactersViewModel.loadCharacters()
+        await charactersViewModel.loadFirstCharacters()
     }
 }
 
