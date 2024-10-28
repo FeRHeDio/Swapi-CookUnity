@@ -29,6 +29,9 @@ struct CharacterListView: View {
                 }
             }
         }
+        .refreshable {
+            await getData()
+        }
         .task {
             await getData()
         }
