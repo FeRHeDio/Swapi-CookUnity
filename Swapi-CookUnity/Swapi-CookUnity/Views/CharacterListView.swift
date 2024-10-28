@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  CharacterListView.swift
 //  Swapi-CookUnity
 //
-//  Created by Fernando Putallaz on 25/10/2024.
+//  Created by Fernando Putallaz on 26/10/2024.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct CharacterListView: View {
     @State private var people = [People]()
     
     let api: Api
@@ -42,5 +42,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(api: Api())
+    CharacterListView(api: Api())
 }
