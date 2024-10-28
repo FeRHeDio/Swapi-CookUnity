@@ -8,19 +8,17 @@
 import SwiftUI
 
 struct CharacterListView: View {
-    @State private var people = [People]()
+    @State private var charactersViewModel: CharactersViewModel
     
-    let api: Api
-    
-    init(api: Api) {
-        self.api = api
+    init(charactersViewModel: CharactersViewModel) {
+        self.charactersViewModel = charactersViewModel
     }
     
     var body: some View {
         VStack {
             ScrollView {
                 LazyVStack(spacing: 16) {
-                    ForEach(people) { character in
+                    ForEach(charactersViewModel.people) { character in
                         CharacterCardView(character: character)
                             .padding(.horizontal, 12)
                     }
@@ -33,15 +31,15 @@ struct CharacterListView: View {
     }
     
     private func getData() async {
-        do {
-            self.people = try await api.fetchPeople()
-        } catch {
-            // handle error
-        }
+        await charactersViewModel.loadCharacters()
     }
 }
 
 
 #Preview {
-    CharacterListView(api: Api())
+    CharacterListView(
+        charactersViewModel: CharactersViewModel(
+            api: Api()
+        )
+    )
 }

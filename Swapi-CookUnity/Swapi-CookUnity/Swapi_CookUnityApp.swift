@@ -11,7 +11,11 @@ import SwiftUI
 struct Swapi_CookUnityApp: App {
     var body: some Scene {
         WindowGroup {
-            CharacterListView(api: Api())
+            CharacterListView(
+                charactersViewModel: CharactersViewModel(
+                    api: Api()
+                )
+            )
         }
     }
 }

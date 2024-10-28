@@ -19,6 +19,7 @@
 		76B2C6962CCD0D9600736DB7 /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6952CCD0D9600736DB7 /* CharacterListView.swift */; };
 		76B2C6982CCFA90400736DB7 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6972CCFA90400736DB7 /* CharacterDetailView.swift */; };
 		76B2C69A2CCFAC9100736DB7 /* CharacterCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6992CCFAC9100736DB7 /* CharacterCardView.swift */; };
+		76B2C69D2CCFC1A200736DB7 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C69C2CCFC1A200736DB7 /* CharactersViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		76B2C6952CCD0D9600736DB7 /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
 		76B2C6972CCFA90400736DB7 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		76B2C6992CCFAC9100736DB7 /* CharacterCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCardView.swift; sourceTree = "<group>"; };
+		76B2C69C2CCFC1A200736DB7 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		76B2C6632CCC3E5E00736DB7 /* Swapi-CookUnity */ = {
 			isa = PBXGroup;
 			children = (
+				76B2C69B2CCFC19600736DB7 /* ViewModels */,
 				76B2C6942CCD0D8100736DB7 /* Views */,
 				76B2C6912CCC466000736DB7 /* Models */,
 				76B2C68E2CCC462D00736DB7 /* Services */,
@@ -164,6 +167,14 @@
 				76B2C6992CCFAC9100736DB7 /* CharacterCardView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		76B2C69B2CCFC19600736DB7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				76B2C69C2CCFC1A200736DB7 /* CharactersViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76B2C69D2CCFC1A200736DB7 /* CharactersViewModel.swift in Sources */,
 				76B2C6932CCC467100736DB7 /* People.swift in Sources */,
 				76B2C6902CCC464200736DB7 /* Api.swift in Sources */,
 				76B2C6962CCD0D9600736DB7 /* CharacterListView.swift in Sources */,
