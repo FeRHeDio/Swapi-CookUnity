@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CharacterListView: View {
     @State private var charactersViewModel: CharactersViewModel
+    @State private var selectedCharacter: People?
     
     init(charactersViewModel: CharactersViewModel) {
         self.charactersViewModel = charactersViewModel
@@ -21,12 +22,18 @@ struct CharacterListView: View {
                     ForEach(charactersViewModel.people) { character in
                         CharacterCardView(character: character)
                             .padding(.horizontal, 12)
+                            .onTapGesture {
+                                selectedCharacter = character
+                            }
                     }
                 }
             }
         }
         .task {
             await getData()
+        }
+        .sheet(item: $selectedCharacter) { character in
+            CharacterDetailView(character: character)
         }
     }
     
