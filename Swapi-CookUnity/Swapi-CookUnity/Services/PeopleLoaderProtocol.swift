@@ -13,6 +13,12 @@ protocol PeopleLoaderProtocol {
     var hasMorePages: Bool { get set }
 }
 
+extension PeopleLoaderProtocol {
+    var hasMorePages: Bool {
+        return true
+    }
+}
+
 struct Reachability {
     static let networkAvailable = true
 }

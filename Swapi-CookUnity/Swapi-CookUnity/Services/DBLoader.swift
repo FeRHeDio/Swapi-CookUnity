@@ -8,12 +8,8 @@
 import Foundation
 
 class DBLoader: PeopleLoaderProtocol {
-    var hasMorePages: Bool
-    
-    init(hasMorePages: Bool) {
-        self.hasMorePages = hasMorePages
-    }
-    
+    var hasMorePages = true
+
     func resetCollection() {
         // Do some reset mechanism
     }

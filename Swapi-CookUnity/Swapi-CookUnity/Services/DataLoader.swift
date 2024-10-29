@@ -7,15 +7,14 @@
 
 import Foundation
 
-class DataService: PeopleLoaderProtocol {
+class DataLoader: PeopleLoaderProtocol {
     let apiLoader: ApiLoader
     let dbLoader: DBLoader
-    var hasMorePages: Bool
+    var hasMorePages = true
     
-    init(apiLoader: ApiLoader, dbLoader: DBLoader, hasMorePages: Bool) {
+    init(apiLoader: ApiLoader, dbLoader: DBLoader) {
         self.apiLoader = apiLoader
         self.dbLoader = dbLoader
-        self.hasMorePages = hasMorePages
     }
     
     func getPeople() async throws -> [People] {

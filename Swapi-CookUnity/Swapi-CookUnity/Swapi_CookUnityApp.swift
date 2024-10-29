@@ -9,10 +9,9 @@ import SwiftUI
 
 @main
 struct Swapi_CookUnityApp: App {
-    let dataLoader = DataService(
+    let dataLoader = DataLoader(
         apiLoader: ApiLoader(),
-        dbLoader: DBLoader(hasMorePages: true),
-        hasMorePages: true
+        dbLoader: DBLoader()
     )
     
     var body: some Scene {

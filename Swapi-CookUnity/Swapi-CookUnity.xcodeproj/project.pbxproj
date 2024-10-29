@@ -19,7 +19,7 @@
 		76B2C6982CCFA90400736DB7 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6972CCFA90400736DB7 /* CharacterDetailView.swift */; };
 		76B2C69A2CCFAC9100736DB7 /* CharacterCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6992CCFAC9100736DB7 /* CharacterCardView.swift */; };
 		76B2C69D2CCFC1A200736DB7 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C69C2CCFC1A200736DB7 /* CharactersViewModel.swift */; };
-		76B7AB6B2CD104CE0047847C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B7AB6A2CD104CE0047847C /* DataService.swift */; };
+		76B7AB6B2CD104CE0047847C /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B7AB6A2CD104CE0047847C /* DataLoader.swift */; };
 		76B7AB6D2CD1050E0047847C /* DBLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B7AB6C2CD1050E0047847C /* DBLoader.swift */; };
 		76B7AB6F2CD105470047847C /* ApiLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B7AB6E2CD105470047847C /* ApiLoader.swift */; };
 /* End PBXBuildFile section */
@@ -57,7 +57,7 @@
 		76B2C6972CCFA90400736DB7 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		76B2C6992CCFAC9100736DB7 /* CharacterCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCardView.swift; sourceTree = "<group>"; };
 		76B2C69C2CCFC1A200736DB7 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
-		76B7AB6A2CD104CE0047847C /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		76B7AB6A2CD104CE0047847C /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		76B7AB6C2CD1050E0047847C /* DBLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBLoader.swift; sourceTree = "<group>"; };
 		76B7AB6E2CD105470047847C /* ApiLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				76B2C68F2CCC464200736DB7 /* PeopleLoaderProtocol.swift */,
-				76B7AB6A2CD104CE0047847C /* DataService.swift */,
+				76B7AB6A2CD104CE0047847C /* DataLoader.swift */,
 				76B7AB6C2CD1050E0047847C /* DBLoader.swift */,
 				76B7AB6E2CD105470047847C /* ApiLoader.swift */,
 			);
@@ -322,7 +322,7 @@
 				76B2C6982CCFA90400736DB7 /* CharacterDetailView.swift in Sources */,
 				76B2C69A2CCFAC9100736DB7 /* CharacterCardView.swift in Sources */,
 				76B2C6652CCC3E5E00736DB7 /* Swapi_CookUnityApp.swift in Sources */,
-				76B7AB6B2CD104CE0047847C /* DataService.swift in Sources */,
+				76B7AB6B2CD104CE0047847C /* DataLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
