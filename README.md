@@ -18,9 +18,12 @@ The Project doesn't require any external library.
 
 ## Comments
 
+The app Implements a ScrollView with infinite scrolling (pagination) and a modal view with details that renders when tapped for each of the Character/Person.
+
 ## UI
 
-I decided to leave the UI as simple and basic as posible, and focus the time in the architectural part of the challenge and with a strong base build a better UI over it.
+I decided to leave the UI as simple and basic as posible, but a clean working experience, and focus the time in the architectural part of the challenge and with a strong base build a better UI over it.
+- Indeed I was thinking about presenting the cards in different ways, add the images to it but this would be added a lot of complexity and I already asked for more time to complete the challenge.-
 
 The UI is composed of 3 different views: 
 
@@ -85,6 +88,7 @@ This is just a simple example and many more robust test can be made with this ba
 
 ## Final thoughts.
 
+- The app is fast and it works 100% with infinite scrolling.
 - I always commit small pieces of work and use clear commit messages to give context to the reader/reviewer. 
 - I used SOLID Principles and Clean Code, applied Separation of Concerns to not couple responsibilites acrross different modules. 
 - In this way we can extend the app in many different ways, have a testable and a clear base where we can build upon.
