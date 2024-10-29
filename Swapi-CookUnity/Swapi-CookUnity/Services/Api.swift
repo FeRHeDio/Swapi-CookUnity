@@ -74,31 +74,3 @@ class DBLoader: PeopleLoaderProtocol {
 struct Reachability {
     static let networkAvailable = true
 }
-
-class DataService: PeopleLoaderProtocol {
-    let apiLoader: ApiLoader
-    let dbLoader: DBLoader
-    var hasMorePages: Bool
-    
-    init(apiLoader: ApiLoader, dbLoader: DBLoader, hasMorePages: Bool) {
-        self.apiLoader = apiLoader
-        self.dbLoader = dbLoader
-        self.hasMorePages = hasMorePages
-    }
-    
-    func getPeople() async throws -> [People] {
-        if Reachability.networkAvailable {
-            try await apiLoader.getPeople()
-        } else {
-            try await dbLoader.getPeople()
-        }
-    }
-    
-    func resetCollection() {
-        if Reachability.networkAvailable {
-            apiLoader.resetCollection()
-        } else {
-            dbLoader.resetCollection()
-        }
-    }
-}
