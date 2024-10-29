@@ -14,10 +14,10 @@ class CharactersViewModel {
     var people = [People]()
     var hasMorePages = true
     
-    let api: Api
+    let loader: PeopleLoaderProtocol
     
-    init(api: Api) {
-        self.api = api
+    init(loader: PeopleLoaderProtocol) {
+        self.loader = loader
         
         Task {
             await loadFirstCharacters()
@@ -27,17 +27,17 @@ class CharactersViewModel {
     func loadFirstCharacters() async {
         do {
             self.people.removeAll()
-            api.resetURL()
-            self.people = try await api.fetchPeople()
+            loader.resetCollection()
+            self.people = try await loader.getPeople()
         } catch {
             // handle error
         }
     }
     
     func loadMoreCharacters() async {
-        if api.hasMorePages {
+        if loader.hasMorePages {
             do {
-                let morePeople = try await api.fetchPeople()
+                let morePeople = try await loader.getPeople()
                 self.people.append(contentsOf: morePeople)
             } catch {
                 // handle error
@@ -47,3 +47,4 @@ class CharactersViewModel {
         }
     }
 }
+

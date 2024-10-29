@@ -60,7 +60,9 @@ struct CharacterListView: View {
 #Preview {
     CharacterListView(
         charactersViewModel: CharactersViewModel(
-            api: Api()
+            loader: DBLoader(
+                hasMorePages: true
+            )
         )
     )
 }
