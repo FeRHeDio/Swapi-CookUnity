@@ -52,7 +52,7 @@ The implementation is used using Async/Await to deal with the Asynchronous natur
 
 ### DBLoader
 
-An example of a non existent Database concrete implementation to use, for example, when the use is offline.
+An example of a non existent Database concrete implementation to use, for example, when the user is offline.
 
 ## Models 
 
@@ -64,11 +64,11 @@ Since the data coming from the API is very simple I decided to leave it as is. O
 
 ### CharactersViewModel
 
-This ViewModel is in charge of talking with any concrete implementation of any `PeopleLoaderProtocol`. It receives and manages the State of the people collection which is consumed by the view.
+This ViewModel is in charge of talking to any concrete implementation of any `PeopleLoaderProtocol`. It receives and manages the State of the people collection which is consumed by the view amd also deals with the pagination.
 
 ## App Entry Point - Swapi_CookUnityApp: App - Dependeny Injection
 
-Here takes place the Composition of the App. As you can see I'm using Dependeny Injection and injecting the different dependencies at this point. I decided to inject the `DataLoader` since is the one in charge of switching between different concrete implementations of the loader in the case things go wrong but we can use `ApiLoader` `DBLoader` or anything else that conforms to the protocol.
+Here takes place the Composition of the App. As you can see I'm using Dependeny Injection and injecting the different dependencies at this point. I decided to inject the `DataLoader` since it's the one in charge of switching between different concrete implementations of the loader if things go wrong but we can use `ApiLoader` `DBLoader` or anything else that conforms to the protocol.
 
 ## Unit Tests
 
@@ -80,7 +80,7 @@ This is a simple but working example of a test strtategy that test specifically 
 
 Here I used URLProtocol to intercept network request with `URLSessionMock` and I mimick the response of the call with `makePeopleResponse`.
 
-Then I make some assertions to know if things go well. Try changing any expectation and you can see.
+Then I make some assertions to know if things go well. Try changing any expectation and you can see (the name of Luke for instance)
 
 In this tests I use `makeSUT` to protect the tests from future changes and also use another factory method to inject the response in this tests and of course in future ones.
 
@@ -89,9 +89,10 @@ This is just a simple example and many more robust test can be made with this ba
 ## Final thoughts.
 
 - The app is fast and it works 100% with infinite scrolling.
-- I always commit small pieces of work and use clear commit messages to give context to the reader/reviewer. 
-- I used SOLID Principles and Clean Code, applied Separation of Concerns to not couple responsibilites acrross different modules. 
-- In this way we can extend the app in many different ways, have a testable and a clear base where we can build upon.
+- Some habits to note:
+ - I always commit small pieces of work and use clear commit messages to give context to the reader/reviewer. 
+ - I used SOLID Principles and Clean Code as much as I can (always important), applied Separation of Concerns to not couple responsibilites acrross different modules. 
+ - In this way we can extend the app in many different ways, have a testable and a clear base where we can build upon.
 
 
 
