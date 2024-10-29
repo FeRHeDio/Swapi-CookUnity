@@ -8,13 +8,19 @@
 import Foundation
 
 class ApiLoader: PeopleLoaderProtocol {
+    private var session: URLSession
+    
+    init(session: URLSession = .shared) {
+        self.session = session
+    }
+    
     func getPeople() async throws -> [People] {
         do {
             guard let url = URL(string: url) else {
                 throw URLError(.badURL)
             }
             
-            let (data, response) = try await URLSession.shared.data(from: url)
+            let (data, response) = try await session.data(from: url)
             
             guard let httpResponse = response as? HTTPURLResponse else {
                 throw URLError(.badServerResponse)

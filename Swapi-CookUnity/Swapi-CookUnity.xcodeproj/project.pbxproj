@@ -12,7 +12,6 @@
 		76B2C66C2CCC3E5F00736DB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76B2C66B2CCC3E5F00736DB7 /* Preview Assets.xcassets */; };
 		76B2C6762CCC3E5F00736DB7 /* Swapi_CookUnityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6752CCC3E5F00736DB7 /* Swapi_CookUnityTests.swift */; };
 		76B2C6802CCC3E5F00736DB7 /* Swapi_CookUnityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C67F2CCC3E5F00736DB7 /* Swapi_CookUnityUITests.swift */; };
-		76B2C6822CCC3E5F00736DB7 /* Swapi_CookUnityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6812CCC3E5F00736DB7 /* Swapi_CookUnityUITestsLaunchTests.swift */; };
 		76B2C6902CCC464200736DB7 /* PeopleLoaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C68F2CCC464200736DB7 /* PeopleLoaderProtocol.swift */; };
 		76B2C6932CCC467100736DB7 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6922CCC467100736DB7 /* People.swift */; };
 		76B2C6962CCD0D9600736DB7 /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6952CCD0D9600736DB7 /* CharacterListView.swift */; };
@@ -50,7 +49,6 @@
 		76B2C6752CCC3E5F00736DB7 /* Swapi_CookUnityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swapi_CookUnityTests.swift; sourceTree = "<group>"; };
 		76B2C67B2CCC3E5F00736DB7 /* Swapi-CookUnityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swapi-CookUnityUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B2C67F2CCC3E5F00736DB7 /* Swapi_CookUnityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swapi_CookUnityUITests.swift; sourceTree = "<group>"; };
-		76B2C6812CCC3E5F00736DB7 /* Swapi_CookUnityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swapi_CookUnityUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		76B2C68F2CCC464200736DB7 /* PeopleLoaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleLoaderProtocol.swift; sourceTree = "<group>"; };
 		76B2C6922CCC467100736DB7 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		76B2C6952CCD0D9600736DB7 /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				76B2C67F2CCC3E5F00736DB7 /* Swapi_CookUnityUITests.swift */,
-				76B2C6812CCC3E5F00736DB7 /* Swapi_CookUnityUITestsLaunchTests.swift */,
 			);
 			path = "Swapi-CookUnityUITests";
 			sourceTree = "<group>";
@@ -339,7 +336,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				76B2C6802CCC3E5F00736DB7 /* Swapi_CookUnityUITests.swift in Sources */,
-				76B2C6822CCC3E5F00736DB7 /* Swapi_CookUnityUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
