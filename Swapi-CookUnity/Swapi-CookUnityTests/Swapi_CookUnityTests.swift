@@ -27,7 +27,7 @@ final class Swapi_CookUnityTests: XCTestCase {
         
         XCTAssertEqual(people.count, 1)
         XCTAssertEqual(people[0].name, "Mock Luke Skywalker")
-        XCTAssertEqual(sut.url, "https://swapi.dev/api/people/?page=2")
+        XCTAssertEqual(sut.url, "https://swapi.dev/api/people/?page=1")
         XCTAssertTrue(sut.hasMorePages)
     }
     
@@ -44,7 +44,7 @@ final class Swapi_CookUnityTests: XCTestCase {
     private func makePeopleResponse() -> PeopleResponse {
         PeopleResponse(
             count: 10,
-            next: "https://swapi.dev/api/people/?page=2",
+            next: "https://swapi.dev/api/people/?page=1",
             previous: nil,
             results: [People(
                 name: "Mock Luke Skywalker",
