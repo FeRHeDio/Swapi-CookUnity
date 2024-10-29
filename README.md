@@ -5,8 +5,8 @@
 ## Requirements
 
 No special requirements.
-Xcode 15.4 (should work on Xcode 16)
-iOS 17
+- Xcode 15.4 (should work on Xcode 16)
+- iOS 17
 
 ## Installation
 
