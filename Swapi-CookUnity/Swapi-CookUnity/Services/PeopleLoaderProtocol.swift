@@ -1,5 +1,5 @@
 //
-//  Api.swift
+//  PeopleLoaderProtocol.swift
 //  Swapi-CookUnity
 //
 //  Created by Fernando Putallaz on 25/10/2024.

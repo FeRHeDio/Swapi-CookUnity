@@ -13,7 +13,7 @@
 		76B2C6762CCC3E5F00736DB7 /* Swapi_CookUnityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6752CCC3E5F00736DB7 /* Swapi_CookUnityTests.swift */; };
 		76B2C6802CCC3E5F00736DB7 /* Swapi_CookUnityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C67F2CCC3E5F00736DB7 /* Swapi_CookUnityUITests.swift */; };
 		76B2C6822CCC3E5F00736DB7 /* Swapi_CookUnityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6812CCC3E5F00736DB7 /* Swapi_CookUnityUITestsLaunchTests.swift */; };
-		76B2C6902CCC464200736DB7 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C68F2CCC464200736DB7 /* Api.swift */; };
+		76B2C6902CCC464200736DB7 /* PeopleLoaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C68F2CCC464200736DB7 /* PeopleLoaderProtocol.swift */; };
 		76B2C6932CCC467100736DB7 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6922CCC467100736DB7 /* People.swift */; };
 		76B2C6962CCD0D9600736DB7 /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6952CCD0D9600736DB7 /* CharacterListView.swift */; };
 		76B2C6982CCFA90400736DB7 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C6972CCFA90400736DB7 /* CharacterDetailView.swift */; };
@@ -51,7 +51,7 @@
 		76B2C67B2CCC3E5F00736DB7 /* Swapi-CookUnityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swapi-CookUnityUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B2C67F2CCC3E5F00736DB7 /* Swapi_CookUnityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swapi_CookUnityUITests.swift; sourceTree = "<group>"; };
 		76B2C6812CCC3E5F00736DB7 /* Swapi_CookUnityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swapi_CookUnityUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		76B2C68F2CCC464200736DB7 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		76B2C68F2CCC464200736DB7 /* PeopleLoaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleLoaderProtocol.swift; sourceTree = "<group>"; };
 		76B2C6922CCC467100736DB7 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		76B2C6952CCD0D9600736DB7 /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
 		76B2C6972CCFA90400736DB7 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
@@ -149,7 +149,7 @@
 		76B2C68E2CCC462D00736DB7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				76B2C68F2CCC464200736DB7 /* Api.swift */,
+				76B2C68F2CCC464200736DB7 /* PeopleLoaderProtocol.swift */,
 				76B7AB6A2CD104CE0047847C /* DataService.swift */,
 				76B7AB6C2CD1050E0047847C /* DBLoader.swift */,
 				76B7AB6E2CD105470047847C /* ApiLoader.swift */,
@@ -315,7 +315,7 @@
 			files = (
 				76B2C69D2CCFC1A200736DB7 /* CharactersViewModel.swift in Sources */,
 				76B2C6932CCC467100736DB7 /* People.swift in Sources */,
-				76B2C6902CCC464200736DB7 /* Api.swift in Sources */,
+				76B2C6902CCC464200736DB7 /* PeopleLoaderProtocol.swift in Sources */,
 				76B7AB6F2CD105470047847C /* ApiLoader.swift in Sources */,
 				76B2C6962CCD0D9600736DB7 /* CharacterListView.swift in Sources */,
 				76B7AB6D2CD1050E0047847C /* DBLoader.swift in Sources */,
