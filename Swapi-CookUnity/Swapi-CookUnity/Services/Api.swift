@@ -13,7 +13,6 @@ class Api {
     
     func fetchPeople() async throws -> [People] {
         do {
-            
             guard let url = URL(string: url) else {
                 throw URLError(.badURL)
             }

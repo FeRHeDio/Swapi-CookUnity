@@ -27,14 +27,16 @@ struct CharacterListView: View {
                             }
                         
                         if character == charactersViewModel.people.last {
-                            HStack {
-                                ProgressView()
-                                    .progressViewStyle(.circular)
-                                    .onAppear {
-                                        Task {
-                                            await charactersViewModel.loadMoreCharacters()
+                            if charactersViewModel.hasMorePages {
+                                HStack {
+                                    ProgressView()
+                                        .progressViewStyle(.circular)
+                                        .onAppear {
+                                            Task {
+                                                await charactersViewModel.loadMoreCharacters()
+                                            }
                                         }
-                                    }
+                                }
                             }
                         }
                     }

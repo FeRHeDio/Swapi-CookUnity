@@ -12,6 +12,7 @@ import Foundation
 @Observable
 class CharactersViewModel {
     var people = [People]()
+    var hasMorePages = true
     
     let api: Api
     
@@ -41,6 +42,8 @@ class CharactersViewModel {
             } catch {
                 // handle error
             }
+        } else {
+            hasMorePages = false
         }
     }
 }
