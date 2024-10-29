@@ -85,7 +85,9 @@ This is just a simple example and many more robust test can be made with this ba
 
 ## Final thoughts.
 
-In this way I tried to use SOLID Principles in many places, tried to apply the Separation of Concerns to not couple responsibilites acrross different modules and in this way we can extend the app in many different ways, have a testable and a clear base where we can build upon.
+- I always commit small pieces of work and use clear commit messages to give context to the reader/reviewer. 
+- I used SOLID Principles and Clean Code, applied Separation of Concerns to not couple responsibilites acrross different modules. 
+- In this way we can extend the app in many different ways, have a testable and a clear base where we can build upon.
 
 
 
