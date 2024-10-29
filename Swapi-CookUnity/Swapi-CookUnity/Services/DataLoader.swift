@@ -10,11 +10,15 @@ import Foundation
 class DataLoader: PeopleLoaderProtocol {
     let apiLoader: ApiLoader
     let dbLoader: DBLoader
-    var hasMorePages = true
+    var hasMorePages: Bool {
+        get { apiLoader.hasMorePages }
+        set { apiLoader.hasMorePages = newValue }
+    }
     
-    init(apiLoader: ApiLoader, dbLoader: DBLoader) {
+    init(apiLoader: ApiLoader, dbLoader: DBLoader, hasMorePages: Bool = true) {
         self.apiLoader = apiLoader
         self.dbLoader = dbLoader
+        self.hasMorePages = hasMorePages
     }
     
     func getPeople() async throws -> [People] {

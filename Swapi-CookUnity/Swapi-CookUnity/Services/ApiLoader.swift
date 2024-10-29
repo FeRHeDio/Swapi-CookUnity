@@ -9,6 +9,8 @@ import Foundation
 
 class ApiLoader: PeopleLoaderProtocol {
     private var session: URLSession
+    var url = "https://swapi.dev/api/people/?page=1"
+    var hasMorePages = true
     
     init(session: URLSession = .shared) {
         self.session = session
@@ -34,9 +36,10 @@ class ApiLoader: PeopleLoaderProtocol {
             
             if let nextPage = peopleResponse.next {
                 self.url = nextPage
-                print(nextPage)
+                print("Next Page: \(nextPage)")
             } else {
                 hasMorePages = false
+                print("No more pages to load.")
             }
             
             return peopleResponse.results
@@ -45,9 +48,6 @@ class ApiLoader: PeopleLoaderProtocol {
             throw URLError(.unknown)
         }
     }
-    
-    var url = "https://swapi.dev/api/people/?page=1"
-    var hasMorePages = true
     
     func resetCollection() {
         self.url = "https://swapi.dev/api/people/?page=1"
