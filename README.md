@@ -71,6 +71,8 @@ Here takes place the Composition of the App. As you can see I'm using Dependeny 
 
 ### Swapi_CookUnityTests 
 
+Hit CMD+U and see the test pass.
+
 This is a simple but working example of a test strtategy that test specifically the `ApiLoader`
 
 Here I used URLProtocol to intercept network request with `URLSessionMock` and I mimick the response of the call with `makePeopleResponse`.
